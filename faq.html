@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>자주 묻는 질문 (FAQ) | 정운관세법인</title>
+<meta name="description" content="수출입 통관, FTA, 관세환급, AEO, 통관업체 선택에 관한 자주 묻는 질문과 전문 관세사의 답변을 확인하세요.">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{--sky:#3BAFDA;--sky-dark:#1a8ab8;--sky-light:#e8f7fc;--navy:#0d2340;--navy-mid:#1a3a5c;--text:#1a1a2e;--text-muted:#5a6a7e;--border:#dde8f0;--bg:#ffffff;--bg2:#f5f9fc;}
+*{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
+body{font-family:'Pretendard',-apple-system,sans-serif;color:var(--text);background:var(--bg);}
+/* HEADER */
+header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);padding:0 48px;display:flex;align-items:center;justify-content:space-between;height:68px;}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.logo-mark{width:36px;height:36px;background:var(--sky);border-radius:8px;display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:13px;}
+.logo-text{font-size:15px;font-weight:700;color:var(--navy);}
+.logo-sub{font-size:10px;color:var(--text-muted);}
+nav{display:flex;gap:0;align-items:center;}
+.nav-item{position:relative;}
+.nav-link{display:block;padding:24px 18px;font-size:15px;color:var(--text-muted);text-decoration:none;font-weight:500;transition:color 0.2s;white-space:nowrap;position:relative;}
+.nav-link:hover,.nav-link.active{color:var(--sky);}
+.nav-link.active{font-weight:700;}
+.nav-link.active::after{content:'';position:absolute;bottom:0;left:18px;right:18px;height:2px;background:var(--sky);border-radius:2px 2px 0 0;}
+.dropdown{position:absolute;top:68px;left:0;background:white;border:1px solid var(--border);border-radius:0 0 10px 10px;box-shadow:0 8px 24px rgba(0,0,0,0.08);min-width:180px;padding:8px 0;opacity:0;visibility:hidden;transform:translateY(-4px);transition:all 0.18s;z-index:200;}
+.nav-item:hover .dropdown{opacity:1;visibility:visible;transform:translateY(0);}
+.dropdown a{display:block;padding:10px 20px;font-size:13px;color:var(--text);text-decoration:none;font-weight:500;transition:all 0.15s;}
+.dropdown a:hover{background:var(--sky-light);color:var(--sky-dark);padding-left:26px;}
+.btn-consult{background:var(--sky);color:white;border:none;padding:10px 22px;border-radius:6px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit;transition:background 0.2s;text-decoration:none;margin-left:16px;}
+.btn-consult:hover{background:var(--sky-dark);}
+
+/* LANGUAGE SELECTOR */
+.lang-switcher{position:relative;display:inline-block;margin-left:16px;}
+.lang-current{display:inline-flex;align-items:center;gap:6px;background:transparent;border:1px solid var(--border);padding:8px 14px;border-radius:6px;font-size:13px;font-weight:600;color:var(--navy);cursor:pointer;font-family:inherit;transition:all 0.2s;}
+.lang-current:hover{border-color:var(--sky);color:var(--sky);}
+.lang-current .lang-arrow{width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid currentColor;transition:transform 0.2s;}
+.lang-switcher.open .lang-current .lang-arrow{transform:rotate(180deg);}
+.lang-menu{position:absolute;top:calc(100% + 6px);right:0;background:white;border:1px solid var(--border);border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,0.08);min-width:140px;padding:6px;opacity:0;visibility:hidden;transform:translateY(-4px);transition:all 0.18s;z-index:200;}
+.lang-switcher.open .lang-menu{opacity:1;visibility:visible;transform:translateY(0);}
+.lang-option{display:flex;align-items:center;gap:10px;width:100%;padding:9px 12px;background:transparent;border:none;border-radius:5px;font-size:13px;font-weight:500;color:var(--text);cursor:pointer;font-family:inherit;text-align:left;transition:background 0.15s;}
+.lang-option:hover{background:var(--bg2);}
+.lang-option.active{background:var(--sky-light);color:var(--sky-dark);font-weight:700;}
+.lang-option .lang-code{font-size:11px;color:var(--text-muted);margin-left:auto;font-weight:600;}
+/* PAGE HERO */
+.page-hero{padding:120px 48px 56px;background-image:linear-gradient(145deg,rgba(15,28,53,0.72) 0%,rgba(20,40,70,0.58) 60%,rgba(29,80,128,0.62) 100%),url('img/faq.png');background-size:cover;background-position:center;background-repeat:no-repeat;position:relative;overflow:hidden;}
+.page-hero::before{content:'';position:absolute;top:-20%;right:-5%;width:400px;height:400px;background:radial-gradient(circle,rgba(59,175,218,0.15) 0%,transparent 70%);border-radius:50%;}
+.page-hero-inner{max-width:900px;margin:0 auto;position:relative;z-index:1;}
+.breadcrumb{display:flex;align-items:center;gap:8px;margin-bottom:14px;}
+.breadcrumb span{font-size:12px;color:rgba(255,255,255,0.7);text-shadow:0 1px 4px rgba(0,0,0,0.5);}
+.breadcrumb a{font-size:12px;color:rgba(255,255,255,0.8);text-decoration:none;text-shadow:0 1px 4px rgba(0,0,0,0.5);}
+.page-hero h1{font-size:clamp(28px,4vw,40px);font-weight:800;color:white;letter-spacing:-1px;margin-bottom:12px;text-shadow:0 2px 16px rgba(0,0,0,0.6);}
+.page-hero p{font-size:16px;color:rgba(255,255,255,0.92);line-height:1.8;text-shadow:0 1px 8px rgba(0,0,0,0.5);}
+/* 앵커 탭 */
+.anchor-nav{background:white;border-bottom:1px solid var(--border);position:sticky;top:68px;z-index:90;box-shadow:0 2px 8px rgba(0,0,0,0.04);padding:0 48px;}
+.anchor-nav-inner{max-width:900px;margin:0 auto;padding:0;display:flex;flex-wrap:wrap;gap:0;scrollbar-width:none;-ms-overflow-style:none;}
+.anchor-nav-inner::-webkit-scrollbar{display:none;}
+.anchor-btn{padding:14px 28px;font-size:13.5px;font-weight:500;color:var(--text-muted);background:none;border:none;cursor:pointer;font-family:inherit;white-space:nowrap;border-bottom:4px solid transparent;margin-bottom:-1px;transition:all 0.2s;text-decoration:none;display:block;border-radius:6px 6px 0 0;}
+.anchor-nav-inner .anchor-btn:first-child{margin-left:-28px;}
+.anchor-btn:hover{color:var(--sky);background:var(--sky-light);}
+.anchor-btn.active{color:var(--sky-dark);font-weight:700;border-bottom-color:var(--sky);}
+/* FAQ 본문 */
+.faq-page{padding:64px 48px 96px;}
+.faq-page-inner{max-width:900px;margin:0 auto;}
+.faq-section{scroll-margin-top:130px;margin-bottom:56px;}
+.faq-section-title{font-size:18px;font-weight:800;color:var(--navy);margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid var(--sky);display:flex;align-items:center;gap:10px;}
+.faq-list{display:flex;flex-direction:column;gap:0;border:1px solid var(--border);border-radius:12px;overflow:hidden;}
+.faq-item{border-bottom:1px solid var(--border);}
+.faq-item:last-child{border-bottom:none;}
+.faq-q{width:100%;text-align:left;background:white;border:none;padding:20px 24px;font-size:15px;font-weight:600;color:var(--navy);cursor:pointer;font-family:inherit;display:flex;justify-content:space-between;align-items:center;gap:16px;transition:background 0.2s;}
+.faq-q:hover{background:var(--sky-light);}
+.faq-q.open{background:var(--sky-light);color:var(--sky-dark);}
+.faq-arrow{font-size:20px;flex-shrink:0;transition:transform 0.2s;color:var(--sky);font-weight:400;}
+.faq-q.open .faq-arrow{transform:rotate(45deg);}
+.faq-a{display:none;padding:0 24px 20px;font-size:14px;color:var(--text-muted);line-height:1.9;background:var(--sky-light);}
+.faq-a.open{display:block;}
+/* CTA */
+.cta-box{background:linear-gradient(135deg,var(--sky) 0%,var(--sky-dark) 100%);border-radius:16px;padding:48px;text-align:center;margin-top:64px;}
+.cta-box h3{font-size:22px;font-weight:800;color:white;margin-bottom:10px;letter-spacing:-0.5px;}
+.cta-box p{font-size:14px;color:rgba(255,255,255,0.8);margin-bottom:28px;}
+.btn-cta{display:inline-flex;align-items:center;gap:8px;background:white;color:var(--sky);padding:13px 32px;border-radius:8px;font-size:15px;font-weight:700;text-decoration:none;transition:all 0.2s;}
+.btn-cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.15);}
+/* FOOTER */
+footer{background:var(--navy);padding:60px 48px 32px;color:rgba(255,255,255,0.6);}
+.footer-inner{max-width:1200px;margin:0 auto;}
+.footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,0.08);}
+.footer-logo{font-family:'Pretendard',sans-serif;font-size:20px;font-weight:800;color:white;margin-bottom:16px;letter-spacing:-0.5px;}
+.footer-info p{font-size:13px;line-height:2.0;}
+.footer-col h4{font-size:13px;font-weight:700;color:white;margin-bottom:16px;}
+.footer-col a{display:block;font-size:13px;color:rgba(255,255,255,0.5);text-decoration:none;margin-bottom:10px;transition:color 0.2s;}
+.footer-col a:hover{color:var(--sky);}
+.footer-bottom{padding-top:28px;display:flex;align-items:center;justify-content:space-between;}
+.footer-bottom p{font-size:12px;}
+.footer-sns{display:flex;gap:10px;}
+.sns-btn{width:32px;height:32px;background:rgba(255,255,255,0.07);border-radius:7px;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:13px;transition:background 0.2s;color:white;}
+.sns-btn:hover{background:var(--sky);}
+/* 플로팅 */
+.floating{position:fixed;right:24px;bottom:32px;display:flex;flex-direction:column;gap:10px;z-index:200;}
+.float-btn{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:18px;box-shadow:0 4px 16px rgba(0,0,0,0.15);transition:all 0.2s;background:white;border:1px solid var(--border);color:var(--navy);position:relative;}
+.float-btn:hover{transform:translateX(-3px);}
+.float-btn:hover .float-label{opacity:1;transform:translateX(0);}
+.float-label{position:absolute;right:56px;white-space:nowrap;background:var(--navy);color:white;font-size:11px;padding:5px 10px;border-radius:5px;opacity:0;transform:translateX(6px);transition:all 0.2s;}
+.float-youtube:hover{background:#fff0f0;border-color:#FF0000;}
+.float-naver:hover{background:#f0fff5;border-color:#03C75A;}
+.float-consult{width:48px;height:48px;background:var(--sky);border:none;font-size:18px;border-radius:12px;}
+.float-consult:hover{background:var(--sky-dark);}
+@media(max-width:900px){header{padding:0 20px;}nav{display:none;}.page-hero,.faq-page{padding-left:20px;padding-right:20px;}.anchor-nav{padding:0 20px;}.anchor-nav-inner{padding:0;overflow-x:auto;flex-wrap:nowrap;}.footer-top{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){.footer-top{grid-template-columns:1fr;}}
+
+/* ── 전역 스크롤바 커스터마이징 ── */
+::-webkit-scrollbar{width:8px;height:8px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:rgba(13,35,64,0.18);border-radius:10px;}
+::-webkit-scrollbar-thumb:hover{background:rgba(13,35,64,0.32);}
+::-webkit-scrollbar-button{display:none;width:0;height:0;}
+html{scrollbar-width:thin;scrollbar-color:rgba(13,35,64,0.18) transparent;}
+
+/* ── 이메일 상담 신청 팝업 ── */
+.email-modal-overlay{display:none;position:fixed;inset:0;background:rgba(13,35,64,0.55);z-index:999;align-items:center;justify-content:center;padding:20px;}
+.email-modal-overlay.open{display:flex;}
+.email-modal{background:white;border-radius:16px;padding:36px;max-width:440px;width:100%;position:relative;box-shadow:0 20px 60px rgba(0,0,0,0.25);}
+.email-modal-close{position:absolute;top:16px;right:16px;background:none;border:none;font-size:18px;color:var(--text-muted);cursor:pointer;line-height:1;}
+.email-modal-title{font-size:20px;font-weight:800;color:var(--navy);margin-bottom:6px;}
+.email-modal-sub{font-size:13px;color:var(--text-muted);margin-bottom:22px;line-height:1.5;}
+.email-field-label{display:block;font-size:12.5px;font-weight:700;color:var(--navy);margin:14px 0 6px;}
+.email-field-input,.email-field-textarea{width:100%;padding:11px 14px;border:1px solid var(--border);border-radius:8px;font-family:inherit;font-size:14px;resize:vertical;box-sizing:border-box;}
+.email-field-input:focus,.email-field-textarea:focus{outline:none;border-color:var(--sky);}
+.email-modal-submit{margin-top:22px;width:100%;padding:13px;background:var(--sky);color:white;border:none;border-radius:8px;font-weight:700;font-size:14.5px;cursor:pointer;transition:background 0.2s;}
+.email-modal-submit:hover{background:var(--sky-dark);}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="index_v7.html" class="logo">
+    <div class="logo-mark">정운</div>
+    <div><div class="logo-text">정운관세법인</div><div class="logo-sub">JungWoon Customs Consulting</div></div>
+  </a>
+  <nav>
+    <div class="nav-item"><a href="services.html" class="nav-link">서비스</a><div class="dropdown"><a href="services.html?page=ecommerce">E-commerce 통관</a><a href="services.html?page=import">수입 통관</a><a href="services.html?page=export">수출 통관</a><a href="services.html?page=logistics">물류 서비스</a></div></div>
+    <div class="nav-item"><a href="consulting.html" class="nav-link">컨설팅</a><div class="dropdown"><a href="consulting.html?page=fta">FTA 컨설팅</a><a href="consulting.html?page=refund">관세환급</a><a href="consulting.html?page=aeo">AEO 컨설팅</a><a href="consulting.html?page=audit">관세 조사 컨설팅</a><a href="consulting.html?page=dispute">관세 쟁송</a><a href="consulting.html?page=import-req">수입 요건 컨설팅</a></div></div>
+    <div class="nav-item"><a href="about.html" class="nav-link">정운소개</a><div class="dropdown"><a href="about.html?page=company">회사소개</a><a href="about.html?page=history">연혁</a><a href="about.html?page=greetings">인사말</a><a href="about.html?page=aeo">AEO 경영방침</a><a href="about.html?page=vision">비전 & 가치</a><a href="about.html?page=careers">인재상</a><a href="about.html?page=education">교육 서비스</a><a href="about.html?page=location">오시는 길</a></div></div>
+    <div class="nav-item"><a href="media.html" class="nav-link">미디어</a></div>
+    <div class="nav-item"><a href="faq.html" class="nav-link active">FAQ</a></div>
+  </nav>
+  <div class="lang-switcher" id="langSwitcher">
+    <button type="button" class="lang-current" id="langCurrentBtn" aria-label="Select language">
+      <span id="langCurrentLabel">한국어</span>
+      <span class="lang-arrow"></span>
+    </button>
+    <div class="lang-menu" role="menu">
+      <button type="button" class="lang-option" data-lang="ko">한국어 <span class="lang-code">KO</span></button>
+      <button type="button" class="lang-option" data-lang="zh">中文 <span class="lang-code">ZH</span></button>
+      <button type="button" class="lang-option" data-lang="ja">日本語 <span class="lang-code">JA</span></button>
+      <button type="button" class="lang-option" data-lang="en">English <span class="lang-code">EN</span></button>
+    </div>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index_v7.html">홈</a><span>›</span><span>자주 묻는 질문</span></div>
+    <h1>자주 묻는 질문</h1>
+    <p>수출입 실무부터 통관업체 선택까지<br>담당자들이 가장 많이 묻는 질문과 전문 관세사의 답변을 모았습니다.</p>
+  </div>
+</div>
+
+<nav class="anchor-nav">
+  <div class="anchor-nav-inner">
+    <a href="#sec-practice" class="anchor-btn active">수출입 실무</a>
+    <a href="#sec-fta" class="anchor-btn">FTA · 관세환급</a>
+    <a href="#sec-audit" class="anchor-btn">심사 · 쟁송</a>
+    <a href="#sec-select" class="anchor-btn">통관업체 선택</a>
+    <a href="#sec-b2c" class="anchor-btn">해외직구 · 여행자</a>
+  </div>
+</nav>
+
+<div class="faq-page">
+<div class="faq-page-inner">
+
+  <!-- 수출입 실무 -->
+  <div class="faq-section" id="sec-practice">
+    <div class="faq-section-title">수출입 실무</div>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">수입통관 시 HS Code를 잘못 신고하면 어떻게 되나요?<span class="faq-arrow">＋</span></button><div class="faq-a">추후 세관 심사에서 적발될 경우 추징세액과 가산세가 부과될 수 있습니다. 통관 전 HS Code 사전 검토와 품목분류 사전심사 신청으로 리스크를 사전에 차단하는 것이 중요합니다.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">과세가격(수입통관 시 세금 기준)은 어떻게 결정되나요?<span class="faq-arrow">＋</span></button><div class="faq-a">원칙적으로 실제 거래가격을 기준으로 하며, 운임·보험료 등이 포함되는 CIF 가격 기준입니다. 특수관계 거래·로열티·무상 제공 물품 등은 별도 검토가 필요합니다.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">잠정가격 신고란 무엇인가요?<span class="faq-arrow">＋</span></button><div class="faq-a">계약 조건 등으로 수입 시점에 정확한 가격 확정이 어려울 때 일단 잠정 가격으로 신고하고, 이후 확정 가격이 정해지면 정정 신고하는 제도입니다.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">수출입 신고 정정은 언제까지 가능한가요?<span class="faq-arrow">＋</span></button><div class="faq-a">수리 후 관세법에서 정한 기간 이내에 정정 신고가 가능합니다. 단, 세관 심사 통보 이후에는 자진 신고에 따른 감면 혜택이 없어지므로 조기에 검토하는 것이 중요합니다.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">보세공장 반입 물품의 관세 처리는 어떻게 되나요?<span class="faq-arrow">＋</span></button><div class="faq-a">보세공장에 반입된 원재료는 관세 납부 없이 가공할 수 있으며, 완제품을 수출하면 관세 부담 없이 처리됩니다. 내수 판매 시에는 관세를 납부해야 합니다. 관세환급과 연계하여 비용을 최적화할 수 있습니다.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">AEO 공인을 받으면 어떤 혜택이 있나요?<span class="faq-arrow">＋</span></button><div class="faq-a">수출입 화물 검사 생략, 신속통관, 세관 절차 간소화 등 다양한 혜택이 있습니다. 상호인정협약(MRA) 체결국 간 통관도 간소화되어 글로벌 무역 경쟁력 향상에 도움이 됩니다.</div></div>
+    </div>
+  </div>
+
+  <!-- FTA · 관세환급 -->
+  <div class="faq-section" id="sec-fta">
+    <div class="faq-section-title">FTA · 관세환급</div>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">FTA 원산지증명서는 어떻게 발급받나요?<span class="faq-arrow">＋</span></button><div class="faq-a">인증수출자 자격을 갖춘 수출기업은 자율 발급이 가능하며, 그렇지 않은 경우 세관을 통한 기관 발급 대행이 필요합니다. 협정별로 방식이 다르므로 수출 대상국에 맞는 절차를 확인해야 합니다.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">원산지 사후검증이란 무엇이고, 어떻게 대응해야 하나요?<span class="faq-arrow">＋</span></button><div class="faq-a">FTA 특혜 관세를 적용받은 후 상대국 세관이 원산지 진위를 검증하는 절차입니다. 서류 미비나 원산지 기준 미충족 시 추징이 발생할 수 있어 평소 원산지 관련 서류를 체계적으로 보관해야 합니다.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">FTA 사후적용 신청 기한은 얼마나 되나요?<span class="faq-arrow">＋</span></button><div class="faq-a">수입 신고 수리일로부터 1년 이내에 협정관세 사후적용 신청이 가능합니다. 수입 당시 일반세율로 납부했더라도 요건을 갖추면 환급받을 수 있으므로 과거 수입 건도 검토할 가치가 있습니다.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">관세환급 대상인지 어떻게 알 수 있나요?<span class="faq-arrow">＋</span></button><div class="faq-a">수입 원자재를 사용해 제품을 제조·수출한 기업이 대상입니다. 간이정액환급과 개별환급 중 유리한 방식이 다르므로, 전문가의 사전 진단이 필요합니다. 미수령 환급금이 발생하고 있는 경우도 많습니다.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">AEO 자체평가는 얼마나 자주 해야 하나요?<span class="faq-arrow">＋</span></button><div class="faq-a">관세청 지침에 따라 정기적으로 자체평가를 실시해야 합니다. 결과에 따라 개선 조치를 취해야 하며, 미흡한 경우 공인 취소·정지 등의 불이익이 있을 수 있습니다.</div></div>
+    </div>
+  </div>
+
+  <!-- 심사 · 쟁송 -->
+  <div class="faq-section" id="sec-audit">
+    <div class="faq-section-title">심사 · 쟁송</div>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">세관 심사(관세조사)를 받게 됐는데 어떻게 대응해야 하나요?<span class="faq-arrow">＋</span></button><div class="faq-a">초기 대응이 결과를 크게 좌우합니다. 심사 통보 즉시 전문 관세사와 함께 관련 서류를 검토하고 대응 전략을 수립해야 합니다. 혼자 대응하다 과도한 추징으로 이어지는 사례가 많습니다.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">관세 불복(이의신청·심판청구)은 어떤 경우에 가능한가요?<span class="faq-arrow">＋</span></button><div class="faq-a">세관으로부터 부당한 관세를 부과받은 경우 이의신청·심사청구·심판청구·행정소송 등 불복 절차를 통해 다툴 수 있습니다. 처분 통지일로부터 90일 이내에 청구해야 하므로 신속한 대응이 중요합니다.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">과세전 적부심사와 이의신청은 어떻게 다른가요?<span class="faq-arrow">＋</span></button><div class="faq-a">과세전 적부심사는 세금 부과 전 단계에서 이의를 제기하는 절차이고, 이의신청은 세금 부과 후 불복하는 절차입니다. 과세전 적부심사 단계에서 대응하는 것이 비용·시간 면에서 유리합니다.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">중소기업도 관세 조사 사전 진단을 받을 수 있나요?<span class="faq-arrow">＋</span></button><div class="faq-a">네, 가능합니다. 정운관세법인에서 통관하지 않은 기업이라도 관세 조사 대응·리스크 진단을 받으실 수 있습니다. 심사 전 사전 점검이 추징 위험을 크게 낮춥니다.</div></div>
+    </div>
+  </div>
+
+  <!-- 통관업체 선택 -->
+  <div class="faq-section" id="sec-select">
+    <div class="faq-section-title">통관업체 선택 · 정운관세법인</div>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">관세법인과 관세사무소는 어떻게 다른가요?<span class="faq-arrow">＋</span></button><div class="faq-a">관세법인은 여러 관세사가 공동으로 운영하는 법인 형태로, 조직적인 서비스 체계와 다양한 전문 분야를 갖추고 있습니다. 관세사무소는 개인 관세사가 운영하며 소규모 업무에 적합합니다. 정기적인 수출입이 있는 기업에는 관세법인 이용이 안정적입니다.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">좋은 통관업체를 선택하는 기준이 있나요?<span class="faq-arrow">＋</span></button><div class="faq-a">담당 관세사의 전문성과 경력, 해당 품목·산업군 경험 보유 여부, IT 시스템 수준(API 연동·실시간 리포트), AEO 공인 여부, 관세 조사 대응 역량 등을 종합적으로 확인하는 것이 좋습니다. 단순히 수수료만으로 비교하지 않는 것이 중요합니다.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">기존 통관업체를 바꾸려면 어떻게 해야 하나요?<span class="faq-arrow">＋</span></button><div class="faq-a">통관 업체 변경은 언제든 가능합니다. 기존 업체와의 계약 종료를 확인한 후 새 업체와 계약하면 됩니다. 진행 중인 화물 처리와 서류 이관 계획을 미리 조율하면 공백 없이 전환할 수 있습니다.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">통관 수수료는 어떻게 책정되나요?<span class="faq-arrow">＋</span></button><div class="faq-a">품목, 물량, 서비스 범위(단순 신고 대행인지 컨설팅 포함인지)에 따라 다릅니다. 단순히 가격만 비교하기보다 서비스 품질과 리스크 관리 역량을 함께 고려하는 것이 중요합니다.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">정운관세법인은 어떤 회사인가요?<span class="faq-arrow">＋</span></button><div class="faq-a">2011년 설립된 관세법인으로 서울 강남 본사와 인천공항·부산·창원 지사를 운영합니다. 2017년 AEO 공인을 획득했으며, AI 보이스봇·API 연동·실시간 리포트 등 IT 기반 스마트 통관 서비스를 제공합니다.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">정운관세법인에서 통관하지 않은 기업도 컨설팅을 받을 수 있나요?<span class="faq-arrow">＋</span></button><div class="faq-a">네, 가능합니다. 관세 조사 대응·FTA 컨설팅·관세환급 진단 등은 기존 통관사와 관계없이 언제든지 상담받으실 수 있습니다.</div></div>
+    </div>
+  </div>
+
+  <!-- 해외직구 · 여행자 -->
+  <div class="faq-section" id="sec-b2c">
+    <div class="faq-section-title">해외직구 · 여행자</div>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">해외직구 후 관세를 얼마나 내야 하나요?<span class="faq-arrow">＋</span></button><div class="faq-a">물품 가격 기준 150달러(미국은 200달러) 이하는 목록통관으로 면세 처리되며, 초과 시 품목별 관세율에 따라 관세·부가세가 부과됩니다. 정확한 세율은 관세청 품목분류 시스템에서 확인할 수 있습니다.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">해외여행 후 면세 한도를 초과했을 때 어떻게 해야 하나요?<span class="faq-arrow">＋</span></button><div class="faq-a">귀국 시 세관에 자진 신고하면 납부 세액의 30%를 감면받을 수 있습니다. 면세 한도는 미화 800달러이며, 주류·담배·향수는 별도 한도가 적용됩니다.</div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">통관이 지연되거나 세관에 물품이 억류됐을 때 어떻게 해야 하나요?<span class="faq-arrow">＋</span></button><div class="faq-a">수입 요건 미충족이나 서류 부족이 가장 흔한 원인입니다. 세관으로부터 보정 요청을 받은 경우 기한 내에 서류를 보완해야 하며, 복잡한 경우 관세사 도움이 필요합니다.</div></div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-box" id="cta">
+    <h3>더 궁금한 점이 있으신가요?</h3>
+    <p>전문 관세사가 직접 답변드립니다. 지금 바로 무료로 문의하세요.</p>
+    <a href="javascript:void(0)" class="btn-cta" onclick="openEmailModal()">💬 무료상담신청</a>
+  </div>
+
+</div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-info"><div class="footer-logo">정운관세법인</div><p>대표이사 : 정성일<br>사업자번호 : 261-81-12401<br>서울 강남구 학동로12길 16 (논현동, 정운빌딩)<br>TEL : 02-511-5926<br>E-mail : cs@jwccs.com</p></div>
+      <div class="footer-col"><h4>서비스</h4><a href="services.html?page=import">수입 통관</a><a href="services.html?page=export">수출 통관</a><a href="services.html?page=ecommerce">E-commerce 통관</a><a href="services.html?page=logistics">물류 서비스</a></div>
+      <div class="footer-col"><h4>컨설팅</h4><a href="consulting.html?page=import-req">수입 요건</a><a href="consulting.html?page=audit">관세 조사</a><a href="consulting.html?page=dispute">관세 쟁송</a><a href="consulting.html?page=fta">FTA 컨설팅</a><a href="consulting.html?page=refund">관세환급</a><a href="consulting.html?page=aeo">AEO 컨설팅</a></div>
+      <div class="footer-col"><h4>정운</h4><a href="about.html">회사소개</a><a href="media.html">미디어</a><a href="faq.html">FAQ</a><a href="#cta">무료 상담</a></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 JungWoon Customs Consulting Services. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="floating">
+  <a href="https://www.youtube.com/@정운관세법인-t6c" target="_blank" class="float-btn float-youtube">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+      <path fill="#FF0000" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/>
+      <path fill="#FFFFFF" d="M9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+    </svg>
+    <span class="float-label">유튜브 채널</span>
+  </a>
+  <a href="https://blog.naver.com/unicustoms" target="_blank" class="float-btn float-naver">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+      <rect width="24" height="24" rx="4" fill="#03C75A"/>
+      <path fill="#FFFFFF" d="M13.536 12.237L10.18 7H7v10h3.464v-5.237L13.82 17H17V7h-3.464z"/>
+    </svg>
+    <span class="float-label">네이버 블로그</span>
+  </a>
+    <a href="javascript:void(0)" class="float-btn float-consult" onclick="openEmailModal()">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+      <rect width="24" height="24" rx="7" fill="#3BAFDA"/>
+      <path fill="#FFFFFF" d="M5 7.5v9c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-9c0-.55-.45-1-1-1H6c-.55 0-1 .45-1 1zm1 .2l6 4.3 6-4.3V8l-6 4.3L6 8v-.3z"/>
+    </svg>
+    <span class="float-label">이메일 상담</span>
+  </a>
+</div>
+
+<script>
+function toggleFaq(btn) {
+  const answer = btn.parentElement.querySelector('.faq-a');
+  const isOpen = btn.classList.contains('open');
+  btn.closest('.faq-list').querySelectorAll('.faq-q').forEach(b => {
+    b.classList.remove('open');
+    b.parentElement.querySelector('.faq-a').classList.remove('open');
+  });
+  if (!isOpen) { btn.classList.add('open'); answer.classList.add('open'); }
+}
+// 앵커 네비 스크롤 감지
+const sections = ['sec-practice','sec-fta','sec-audit','sec-select','sec-b2c'];
+const anchorBtns = document.querySelectorAll('.anchor-btn');
+function updateActive() {
+  const scrollY = window.scrollY + 160;
+  let current = sections[0];
+  sections.forEach(id => { const el = document.getElementById(id); if(el && el.offsetTop <= scrollY) current = id; });
+  anchorBtns.forEach(btn => btn.classList.toggle('active', btn.getAttribute('href') === '#' + current));
+}
+window.addEventListener('scroll', updateActive, {passive:true});
+updateActive();
+</script>
+
+<!-- FAQPage Schema JSON-LD -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"수입통관 시 HS Code를 잘못 신고하면 어떻게 되나요?","acceptedAnswer":{"@type":"Answer","text":"추후 세관 심사에서 적발될 경우 추징세액과 가산세가 부과될 수 있습니다. 통관 전 HS Code 사전 검토와 품목분류 사전심사 신청으로 리스크를 사전에 차단하는 것이 중요합니다."}},{"@type":"Question","name":"FTA 사후적용 신청 기한은 얼마나 되나요?","acceptedAnswer":{"@type":"Answer","text":"수입 신고 수리일로부터 1년 이내에 협정관세 사후적용 신청이 가능합니다."}},{"@type":"Question","name":"관세법인과 관세사무소는 어떻게 다른가요?","acceptedAnswer":{"@type":"Answer","text":"관세법인은 여러 관세사가 공동으로 운영하는 법인 형태로, 조직적인 서비스 체계와 다양한 전문 분야를 갖추고 있습니다. 정기적인 수출입이 있는 기업에는 관세법인 이용이 안정적입니다."}},{"@type":"Question","name":"좋은 통관업체를 선택하는 기준이 있나요?","acceptedAnswer":{"@type":"Answer","text":"담당 관세사의 전문성과 경력, 해당 품목·산업군 경험 보유 여부, IT 시스템 수준, AEO 공인 여부, 관세 조사 대응 역량 등을 종합적으로 확인하는 것이 좋습니다."}},{"@type":"Question","name":"기존 통관업체를 바꾸려면 어떻게 해야 하나요?","acceptedAnswer":{"@type":"Answer","text":"통관 업체 변경은 언제든 가능합니다. 기존 업체와의 계약 종료를 확인한 후 새 업체와 계약하면 됩니다."}},{"@type":"Question","name":"정운관세법인은 어떤 회사인가요?","acceptedAnswer":{"@type":"Answer","text":"2011년 설립된 관세법인으로 서울 강남 본사와 인천공항·부산·창원 지사를 운영합니다. 2017년 AEO 공인을 획득했으며, AI 보이스봇·API 연동 등 IT 기반 스마트 통관 서비스를 제공합니다."}}]}
+</script>
+
+<!-- ── LANGUAGE SWITCHER i18n ── -->
+<script>
+(function(){
+  const I18N = {
+    ko: { 'nav.services':'서비스','nav.consulting':'컨설팅','nav.media':'미디어','nav.faq':'FAQ','nav.about':'정운소개','lang.label':'한국어' },
+    zh: { 'nav.services':'服务','nav.consulting':'咨询','nav.media':'媒体','nav.faq':'常见问题','nav.about':'关于我们','lang.label':'中文' },
+    ja: { 'nav.services':'サービス','nav.consulting':'コンサルティング','nav.media':'メディア','nav.faq':'FAQ','nav.about':'会社案内','lang.label':'日本語' },
+    en: { 'nav.services':'Services','nav.consulting':'Consulting','nav.media':'Media','nav.faq':'FAQ','nav.about':'About','lang.label':'English' }
+  };
+  const SUPPORTED_LANGS = ['ko','zh','ja','en'];
+  const LANG_STORAGE_KEY = 'jwccs-lang';
+  function detectInitialLang(){
+    const urlLang = new URLSearchParams(location.search).get('lang');
+    if (urlLang && SUPPORTED_LANGS.includes(urlLang)) return urlLang;
+    try { const saved = localStorage.getItem(LANG_STORAGE_KEY); if (saved && SUPPORTED_LANGS.includes(saved)) return saved; } catch(e){}
+    const nav = (navigator.language || navigator.userLanguage || 'ko').toLowerCase();
+    if (nav.startsWith('zh')) return 'zh';
+    if (nav.startsWith('ja')) return 'ja';
+    if (nav.startsWith('en')) return 'en';
+    if (nav.startsWith('ko')) return 'ko';
+    return 'ko';
+  }
+  function applyLang(lang){
+    if (!SUPPORTED_LANGS.includes(lang)) lang = 'ko';
+    const dict = I18N[lang];
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (dict[key] !== undefined) el.textContent = dict[key];
+    });
+    document.documentElement.setAttribute('lang', lang);
+    const label = document.getElementById('langCurrentLabel');
+    if (label) label.textContent = dict['lang.label'];
+    document.querySelectorAll('.lang-option').forEach(btn => {
+      btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+    });
+    try { localStorage.setItem(LANG_STORAGE_KEY, lang); } catch(e){}
+  }
+  applyLang(detectInitialLang());
+  const langSwitcher = document.getElementById('langSwitcher');
+  const langCurrentBtn = document.getElementById('langCurrentBtn');
+  if (langCurrentBtn) {
+    langCurrentBtn.addEventListener('click', (e) => { e.stopPropagation(); langSwitcher.classList.toggle('open'); });
+  }
+  document.addEventListener('click', () => { if (langSwitcher) langSwitcher.classList.remove('open'); });
+  document.querySelectorAll('.lang-option').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      applyLang(btn.getAttribute('data-lang'));
+      langSwitcher.classList.remove('open');
+    });
+  });
+})();
+
+function openEmailModal(){document.getElementById('emailModalOverlay').classList.add('open');}
+function closeEmailModal(){document.getElementById('emailModalOverlay').classList.remove('open');}
+function submitEmailInquiry(e){
+  e.preventDefault();
+  const company=document.getElementById('ei-company').value;
+  const name=document.getElementById('ei-name').value;
+  const email=document.getElementById('ei-email').value;
+  const message=document.getElementById('ei-message').value;
+  const subject=encodeURIComponent('[이메일 상담 신청] '+company+' / '+name);
+  const body=encodeURIComponent('회사명: '+company+'\n이름: '+name+'\n이메일: '+email+'\n\n문의 내용:\n'+message);
+  window.location.href='mailto:cs@jwccs.com?subject='+subject+'&body='+body;
+  closeEmailModal();
+}
+</script>
+
+<!-- 이메일 상담 신청 팝업 -->
+<div class="email-modal-overlay" id="emailModalOverlay" onclick="if(event.target===this) closeEmailModal()">
+  <div class="email-modal">
+    <button class="email-modal-close" onclick="closeEmailModal()" aria-label="닫기">✕</button>
+    <h3 class="email-modal-title">이메일 상담 신청</h3>
+    <p class="email-modal-sub">아래 내용을 남겨주시면 담당자가 이메일로 회신드립니다.</p>
+    <form id="emailInquiryForm" onsubmit="submitEmailInquiry(event)">
+      <label class="email-field-label">회사명</label>
+      <input type="text" id="ei-company" class="email-field-input" required>
+      <label class="email-field-label">이름</label>
+      <input type="text" id="ei-name" class="email-field-input" required>
+      <label class="email-field-label">이메일 주소</label>
+      <input type="email" id="ei-email" class="email-field-input" required>
+      <label class="email-field-label">문의 내용</label>
+      <textarea id="ei-message" class="email-field-textarea" rows="5" required></textarea>
+      <button type="submit" class="email-modal-submit">이메일 보내기</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>
